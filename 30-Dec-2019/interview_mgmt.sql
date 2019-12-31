@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 30, 2019 at 02:47 PM
+-- Generation Time: Dec 31, 2019 at 01:33 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -82,7 +82,8 @@ INSERT INTO `t_category` (`cat_id`, `cat_name`, `creation_date`, `last_updation_
 (38, '<div><!--block--><strong>Top Ethical Hacking Interview Questions And Answers</strong><br><br></div>', '2018-08-19 15:21:45', '2018-08-19 15:21:45', 1, '2018-08-19 15:21:45'),
 (39, '<div><!--block--><strong>Top Robotic Process Automation Interview Questions And Answers</strong></div>', '2018-08-19 15:44:41', '2018-08-19 15:44:41', 5, '2018-08-19 15:44:41'),
 (40, '<div><!--block--><strong>Top Power BI Interview Questions And Answers</strong></div>', '2018-08-19 15:45:23', '2018-08-19 15:45:23', 1, '2018-08-19 15:45:23'),
-(41, '<div><!--block--><strong>Top Answers to Business Analyst Interview Questions</strong></div>', '2018-08-19 15:53:03', '2018-08-19 15:53:03', 1, '2018-08-19 15:53:03');
+(41, '<div><!--block--><strong>Top Answers to Business Analyst Interview Questions</strong></div>', '2018-08-19 15:53:03', '2018-08-19 15:53:03', 1, '2018-08-19 15:53:03'),
+(42, '<div><!--block-->Windows Commands</div>', '2019-12-31 17:10:33', '2019-12-31 17:10:33', 9, '2019-12-31 17:10:33');
 
 -- --------------------------------------------------------
 
@@ -804,7 +805,9 @@ INSERT INTO `t_catg_ques` (`ques_id`, `linked_cat_id`, `ques`, `creation_date`, 
 (27, 38, '<div><!--block-->What are the different types of spoofing?</div>', '2018-08-19 15:34:25', '2018-11-17 22:48:02', 1, '2018-08-19 15:34:25'),
 (28, 38, '<div><!--block-->What is active and passive reconnaissance?</div>', '2018-08-19 15:34:53', '2018-11-17 22:47:05', 1, '2018-08-19 15:34:53'),
 (29, 38, '<div><!--block-->Differentiate Between a MAC and an IP Address?</div>', '2018-08-19 15:35:08', '2018-11-17 22:46:29', 1, '2018-08-19 15:35:08'),
-(30, 38, '<div><!--block-->What is SSL and why is it not enough when it comes to encryption?</div>', '2018-08-19 15:35:32', '2018-11-17 22:45:59', 1, '2018-08-19 15:35:32');
+(30, 38, '<div><!--block-->What is SSL and why is it not enough when it comes to encryption?</div>', '2018-08-19 15:35:32', '2018-11-17 22:45:59', 1, '2018-08-19 15:35:32'),
+(1, 42, '<div><!--block--><strong>What is windows command to prints only the names of files and not the information of the files in the current directory?</strong></div>', '2019-12-31 17:12:18', '2019-12-31 17:12:18', 9, '2019-12-31 17:12:18'),
+(2, 42, '<div><!--block--><strong>What is windows command to prints only the name of all files in the current directory and any subdirectories to the&nbsp;</strong><strong><em>print.txt</em></strong><strong>&nbsp;file?</strong></div>', '2019-12-31 17:14:24', '2019-12-31 17:14:24', 9, '2019-12-31 17:14:24');
 
 -- --------------------------------------------------------
 
@@ -1537,7 +1540,9 @@ INSERT INTO `t_catg_ques_ans` (`ans_id`, `linked_ques_id`, `linked_cat_id`, `ans
 (1, 23, 16, '<div><!--block--><strong><br></strong><br></div><div><!--block--><br>(Tie this to the attributes of the position) My greatest strength would be my ability to drive my team to excellence. I give them all the tools they need to be successful, communicate on an open level, and constantly evaluate performance.</div>', '2019-09-04 20:39:20', '2019-09-04 20:39:20', 1, '2019-09-04 20:39:20'),
 (1, 22, 16, '<div><!--block--><strong><br></strong><br></div><div><!--block--><br>I will contribute my experience and knowledge . I have vision. I am experienced in the areas that this company will need to grow and I have a plan that will facilitate that growth.</div>', '2019-09-04 20:39:31', '2019-09-04 20:39:31', 1, '2019-09-04 20:39:31'),
 (1, 21, 16, '<div><!--block--><strong><br></strong><br></div><div><!--block--><br>Some of the paperwork that I would handle for another department on an occasional basis.</div>', '2019-09-04 20:39:42', '2019-09-04 20:39:42', 1, '2019-09-04 20:39:42'),
-(1, 20, 16, '<div><!--block--><strong><br></strong><br></div><div><!--block--><br>Yes, I have set budgets in the past. I look at what the typical cost for a certain activity would be based on history or other manager’s experience. I set the budget based on these metrics.</div>', '2019-09-04 20:39:52', '2019-09-04 20:39:52', 1, '2019-09-04 20:39:52');
+(1, 20, 16, '<div><!--block--><strong><br></strong><br></div><div><!--block--><br>Yes, I have set budgets in the past. I look at what the typical cost for a certain activity would be based on history or other manager’s experience. I set the budget based on these metrics.</div>', '2019-09-04 20:39:52', '2019-09-04 20:39:52', 1, '2019-09-04 20:39:52'),
+(1, 1, 42, '<pre><!--block-->dir /b &gt; print.txt</pre><div><!--block--><br>The command above prints only the names of files to the&nbsp;<strong>print.txt</strong>&nbsp;file and not the information of the files in the current directory.</div>', '2019-12-31 17:13:26', '2019-12-31 17:13:26', 1, '2019-12-31 17:13:26'),
+(1, 2, 42, '<pre><!--block-->dir /s /b &gt; print.txt</pre><div><!--block--><br>The command above prints only the name of all files in the current directory and any subdirectories to the&nbsp;<strong>print.txt</strong>&nbsp;file.</div>', '2019-12-31 17:15:26', '2019-12-31 17:15:26', 1, '2019-12-31 17:15:26');
 
 -- --------------------------------------------------------
 
