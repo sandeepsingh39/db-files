@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 30, 2019 at 02:48 PM
+-- Generation Time: Jan 03, 2020 at 10:12 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -165,7 +165,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"interview_mgmt\",\"table\":\"t_category\"},{\"db\":\"interview_mgmt_testing\",\"table\":\"t_category\"},{\"db\":\"interview-mgmt-test\",\"table\":\"categories\"},{\"db\":\"topic-mgmt\",\"table\":\"topic\"},{\"db\":\"topic-mgmt\",\"table\":\"viewtopics\"},{\"db\":\"topic-mgmt\",\"table\":\"view\"},{\"db\":\"topic-mgmt\",\"table\":\"t_group\"},{\"db\":\"topic-mgmt\",\"table\":\"topic_read_history\"},{\"db\":\"topic-mgmt\",\"table\":\"topicgroups\"},{\"db\":\"topic-mgmt\",\"table\":\"groupviews\"}]');
+('root', '[{\"db\":\"interview_mgmt\",\"table\":\"t_category\"},{\"db\":\"topic-mgmt\",\"table\":\"topic\"},{\"db\":\"interview_mgmt_testing\",\"table\":\"t_category\"},{\"db\":\"interview-mgmt-test\",\"table\":\"categories\"},{\"db\":\"topic-mgmt\",\"table\":\"viewtopics\"},{\"db\":\"topic-mgmt\",\"table\":\"view\"},{\"db\":\"topic-mgmt\",\"table\":\"t_group\"},{\"db\":\"topic-mgmt\",\"table\":\"topic_read_history\"},{\"db\":\"topic-mgmt\",\"table\":\"topicgroups\"},{\"db\":\"topic-mgmt\",\"table\":\"groupviews\"}]');
 
 -- --------------------------------------------------------
 
@@ -236,6 +236,13 @@ CREATE TABLE `pma__table_uiprefs` (
   `last_update` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Tables'' UI preferences';
 
+--
+-- Dumping data for table `pma__table_uiprefs`
+--
+
+INSERT INTO `pma__table_uiprefs` (`username`, `db_name`, `table_name`, `prefs`, `last_update`) VALUES
+('root', 'interview_mgmt', 't_category', '{\"sorted_col\":\"`creation_date` DESC\"}', '2019-12-31 12:36:55');
+
 -- --------------------------------------------------------
 
 --
@@ -272,7 +279,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2019-12-30 13:47:03', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2020-01-03 09:12:46', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
