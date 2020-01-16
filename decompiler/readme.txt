@@ -1,0 +1,2 @@
+cd C:\Users\premendra.kumar\git\db-files\decompiler\jars
+java -jar C:\Users\premendra.kumar\git\db-files\decompiler\procyon-decompiler-0.5.36.jar -o C:\Users\premendra.kumar\git\db-files\decompiler\output\EncDesc17 EncDesc17.jar
