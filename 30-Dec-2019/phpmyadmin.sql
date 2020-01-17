@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 03, 2020 at 10:12 AM
+-- Generation Time: Jan 17, 2020 at 02:11 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -165,7 +165,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"interview_mgmt\",\"table\":\"t_category\"},{\"db\":\"topic-mgmt\",\"table\":\"topic\"},{\"db\":\"interview_mgmt_testing\",\"table\":\"t_category\"},{\"db\":\"interview-mgmt-test\",\"table\":\"categories\"},{\"db\":\"topic-mgmt\",\"table\":\"viewtopics\"},{\"db\":\"topic-mgmt\",\"table\":\"view\"},{\"db\":\"topic-mgmt\",\"table\":\"t_group\"},{\"db\":\"topic-mgmt\",\"table\":\"topic_read_history\"},{\"db\":\"topic-mgmt\",\"table\":\"topicgroups\"},{\"db\":\"topic-mgmt\",\"table\":\"groupviews\"}]');
+('root', '[{\"db\":\"word-meaning-test\",\"table\":\"t_word\"},{\"db\":\"word-meaning\",\"table\":\"t_word\"},{\"db\":\"topic-mgmt\",\"table\":\"topic\"},{\"db\":\"word-meaning\",\"table\":\"T_WORD\"},{\"db\":\"interview_mgmt\",\"table\":\"t_catg_ques\"},{\"db\":\"interview_mgmt\",\"table\":\"t_category\"},{\"db\":\"interview_mgmt_testing\",\"table\":\"t_category\"},{\"db\":\"interview-mgmt-test\",\"table\":\"categories\"},{\"db\":\"topic-mgmt\",\"table\":\"viewtopics\"},{\"db\":\"topic-mgmt\",\"table\":\"view\"}]');
 
 -- --------------------------------------------------------
 
@@ -279,7 +279,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2020-01-03 09:12:46', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2020-01-17 13:09:06', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
