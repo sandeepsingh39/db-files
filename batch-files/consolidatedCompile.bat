@@ -4,6 +4,7 @@ SET currentDir=%cd%
 
 SET tomcatWebAppFolderLocation=D:\CUSTOM-INSTALLATIONS\apache-tomcat-8.5.47\webapps
 
+echo Options : "bce-gui"
 set /p UserInputPath=What project would you like compile?
 
 echo "%UserInputPath%"
