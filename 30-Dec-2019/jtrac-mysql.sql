@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2020 at 02:11 PM
+-- Generation Time: Jan 24, 2020 at 02:45 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -197,7 +197,8 @@ CREATE TABLE `metadata` (
 --
 
 INSERT INTO `metadata` (`id`, `version`, `type`, `name`, `description`, `parent_id`, `xml_string`) VALUES
-(1, 1, NULL, NULL, NULL, NULL, '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<metadata><fields><field name=\"severity\" label=\"Status\"><option value=\"1\">In-Progress</option><option value=\"2\">Open</option><option value=\"3\">Work-In-Progress</option><option value=\"4\">On-Hold</option><option value=\"5\">Done</option><option value=\"6\">Reopen</option></field><field name=\"priority\" label=\"Priority\"><option value=\"1\">Highest-1</option><option value=\"2\">High-2</option><option value=\"3\">Medium-3</option><option value=\"4\">Low-4</option><option value=\"5\">Lowest-5</option></field><field name=\"cusInt01\" label=\"Assignee\"><option value=\"1\">Self</option><option value=\"2\">B.Vaishya</option></field><field name=\"cusInt02\" label=\"AssignedTo\"><option value=\"1\">Self</option></field><field name=\"cusInt03\" label=\"TaskGroup\"><option value=\"1\">Self-Assigned</option><option value=\"2\">Code-Review-Release-Mgmt</option><option value=\"3\">Shubh-Web-BOR-Jar</option><option value=\"4\">Notic-KRA-KUA</option><option value=\"5\">Shubh-Web-Login-TR</option><option value=\"6\">Mandatory-Training</option><option value=\"7\">INET-Request</option><option value=\"8\">API-Testing</option><option value=\"9\">Notic-New-Requirement</option><option value=\"10\">Notic-Bug-Fix</option><option value=\"11\">KRA-SFTP-CODE-Configuration</option></field><field name=\"cusStr01\" label=\"TaskDescription\"/><field name=\"cusStr02\" label=\"History\"/><field name=\"cusStr03\" label=\"StepsOrRequirement\"/><field name=\"cusStr04\" label=\"Remarks\"/><field name=\"cusTim01\" label=\"TaskAssignedDate\"/><field-order><field name=\"cusTim01\"/><field name=\"cusInt01\"/><field name=\"cusInt02\"/><field name=\"cusInt03\"/><field name=\"cusStr01\"/><field name=\"cusStr02\"/><field name=\"cusStr03\"/><field name=\"severity\"/><field name=\"cusStr04\"/><field name=\"priority\"/></field-order></fields><roles><role name=\"DEFAULT\"><state status=\"0\"><transition status=\"1\"/><field name=\"cusStr01\" mask=\"3\"/><field name=\"priority\" mask=\"3\"/><field name=\"cusInt01\" mask=\"3\"/><field name=\"severity\" mask=\"3\"/><field name=\"cusTim01\" mask=\"3\"/><field name=\"cusInt03\" mask=\"3\"/><field name=\"cusStr04\" mask=\"3\"/><field name=\"cusInt02\" mask=\"3\"/><field name=\"cusStr02\" mask=\"3\"/><field name=\"cusStr03\" mask=\"3\"/></state><state status=\"1\"><transition status=\"1\"/><transition status=\"99\"/><field name=\"cusStr01\" mask=\"2\"/><field name=\"priority\" mask=\"2\"/><field name=\"cusInt01\" mask=\"2\"/><field name=\"severity\" mask=\"1\"/><field name=\"cusTim01\" mask=\"1\"/><field name=\"cusInt03\" mask=\"2\"/><field name=\"cusStr04\" mask=\"3\"/><field name=\"cusInt02\" mask=\"2\"/><field name=\"cusStr02\" mask=\"3\"/><field name=\"cusStr03\" mask=\"2\"/></state><state status=\"99\"><transition status=\"1\"/><field name=\"cusStr01\" mask=\"2\"/><field name=\"priority\" mask=\"2\"/><field name=\"cusInt01\" mask=\"2\"/><field name=\"severity\" mask=\"1\"/><field name=\"cusTim01\" mask=\"1\"/><field name=\"cusInt03\" mask=\"2\"/><field name=\"cusStr04\" mask=\"3\"/><field name=\"cusInt02\" mask=\"2\"/><field name=\"cusStr02\" mask=\"3\"/><field name=\"cusStr03\" mask=\"2\"/></state></role></roles><states><state status=\"0\" label=\"New\"/><state status=\"1\" label=\"Open\"/><state status=\"99\" label=\"Closed\"/></states></metadata>');
+(1, 2, NULL, NULL, NULL, NULL, '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<metadata><fields><field name=\"severity\" label=\"Status\"><option value=\"1\">In-Progress</option><option value=\"2\">Open</option><option value=\"3\">Work-In-Progress</option><option value=\"4\">On-Hold</option><option value=\"5\">Done</option><option value=\"6\">Reopen</option></field><field name=\"priority\" label=\"Priority\"><option value=\"1\">Highest-1</option><option value=\"2\">High-2</option><option value=\"3\">Medium-3</option><option value=\"4\">Low-4</option><option value=\"5\">Lowest-5</option></field><field name=\"cusInt01\" label=\"Assignee\"><option value=\"1\">Self</option><option value=\"2\">B.Vaishya</option></field><field name=\"cusInt02\" label=\"AssignedTo\"><option value=\"1\">Self</option></field><field name=\"cusInt03\" label=\"TaskGroup\"><option value=\"1\">Self-Assigned</option><option value=\"2\">Code-Review-Release-Mgmt</option><option value=\"3\">Shubh-Web-BOR-Jar</option><option value=\"4\">Notic-KRA-KUA</option><option value=\"5\">Shubh-Web-Login-TR</option><option value=\"6\">Mandatory-Training</option><option value=\"7\">INET-Request</option><option value=\"8\">API-Testing</option><option value=\"9\">Notic-New-Requirement</option><option value=\"10\">Notic-Bug-Fix</option><option value=\"11\">KRA-SFTP-CODE-Configuration</option></field><field name=\"cusStr01\" label=\"TaskDescription\"/><field name=\"cusStr02\" label=\"History\"/><field name=\"cusStr03\" label=\"StepsOrRequirement\"/><field name=\"cusStr04\" label=\"Remarks\"/><field name=\"cusTim01\" label=\"TaskAssignedDate\"/><field-order><field name=\"cusTim01\"/><field name=\"cusInt01\"/><field name=\"cusInt02\"/><field name=\"cusInt03\"/><field name=\"cusStr01\"/><field name=\"cusStr02\"/><field name=\"cusStr03\"/><field name=\"severity\"/><field name=\"cusStr04\"/><field name=\"priority\"/></field-order></fields><roles><role name=\"DEFAULT\"><state status=\"0\"><transition status=\"1\"/><field name=\"cusInt01\" mask=\"3\"/><field name=\"cusInt03\" mask=\"3\"/><field name=\"cusStr03\" mask=\"3\"/><field name=\"priority\" mask=\"3\"/><field name=\"severity\" mask=\"3\"/><field name=\"cusTim01\" mask=\"3\"/><field name=\"cusStr01\" mask=\"3\"/><field name=\"cusStr04\" mask=\"3\"/><field name=\"cusInt02\" mask=\"3\"/><field name=\"cusStr02\" mask=\"3\"/></state><state status=\"1\"><transition status=\"1\"/><transition status=\"99\"/><field name=\"cusInt01\" mask=\"2\"/><field name=\"cusInt03\" mask=\"2\"/><field name=\"cusStr03\" mask=\"2\"/><field name=\"priority\" mask=\"2\"/><field name=\"severity\" mask=\"1\"/><field name=\"cusTim01\" mask=\"1\"/><field name=\"cusStr01\" mask=\"2\"/><field name=\"cusStr04\" mask=\"3\"/><field name=\"cusInt02\" mask=\"2\"/><field name=\"cusStr02\" mask=\"3\"/></state><state status=\"99\"><transition status=\"1\"/><field name=\"cusInt01\" mask=\"2\"/><field name=\"cusInt03\" mask=\"2\"/><field name=\"cusStr03\" mask=\"2\"/><field name=\"priority\" mask=\"2\"/><field name=\"severity\" mask=\"1\"/><field name=\"cusTim01\" mask=\"1\"/><field name=\"cusStr01\" mask=\"2\"/><field name=\"cusStr04\" mask=\"3\"/><field name=\"cusInt02\" mask=\"2\"/><field name=\"cusStr02\" mask=\"3\"/></state></role></roles><states><state status=\"0\" label=\"New\"/><state status=\"1\" label=\"Open\"/><state status=\"99\" label=\"Closed\"/></states></metadata>'),
+(2, 2, NULL, NULL, NULL, NULL, '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<metadata><fields><field name=\"severity\" label=\"Status\"><option value=\"1\">In-Progress</option><option value=\"2\">Open</option><option value=\"3\">Work-In-Progress</option><option value=\"4\">On-Hold</option><option value=\"5\">Done</option><option value=\"6\">Reopen</option></field><field name=\"priority\" label=\"Priority\"><option value=\"1\">Highest-1</option><option value=\"2\">High-2</option><option value=\"3\">Medium-3</option><option value=\"4\">Low-4</option><option value=\"5\">Lowest-5</option></field><field name=\"cusInt01\" label=\"Assignee\"><option value=\"1\">Self</option><option value=\"2\">B. Prasad</option><option value=\"3\">V Gupta</option></field><field name=\"cusInt02\" label=\"AssignedTo\"><option value=\"1\">Self</option></field><field name=\"cusInt03\" label=\"TaskGroup\"><option value=\"1\">Self-Assigned</option><option value=\"2\">Code-Review-Release-Mgmt</option><option value=\"3\">Shubh-Web-BOR-Jar</option><option value=\"4\">Notic-KRA-KUA</option><option value=\"5\">Shubh-Web-Login-TR</option><option value=\"6\">Mandatory-Training</option><option value=\"7\">INET-Request</option><option value=\"8\">API-Testing</option><option value=\"9\">Notic-New-Requirement</option><option value=\"10\">Notic-Bug-Fix</option><option value=\"11\">KRA-SFTP-CODE-Configuration</option></field><field name=\"cusStr01\" label=\"TaskDescription\"/><field name=\"cusStr02\" label=\"History\"/><field name=\"cusStr03\" label=\"StepsOrRequirement\"/><field name=\"cusStr04\" label=\"Remarks\"/><field name=\"cusTim01\" label=\"TaskAssignedDate\"/><field-order><field name=\"cusTim01\"/><field name=\"cusInt01\"/><field name=\"cusInt02\"/><field name=\"cusInt03\"/><field name=\"cusStr01\"/><field name=\"cusStr02\"/><field name=\"cusStr03\"/><field name=\"severity\"/><field name=\"cusStr04\"/><field name=\"priority\"/></field-order></fields><roles><role name=\"DEFAULT\"><state status=\"0\"><transition status=\"1\"/><field name=\"cusInt01\" mask=\"3\"/><field name=\"cusInt03\" mask=\"3\"/><field name=\"cusStr03\" mask=\"3\"/><field name=\"priority\" mask=\"3\"/><field name=\"severity\" mask=\"3\"/><field name=\"cusTim01\" mask=\"3\"/><field name=\"cusStr01\" mask=\"3\"/><field name=\"cusStr04\" mask=\"3\"/><field name=\"cusInt02\" mask=\"3\"/><field name=\"cusStr02\" mask=\"3\"/></state><state status=\"1\"><transition status=\"1\"/><transition status=\"99\"/><field name=\"cusInt01\" mask=\"1\"/><field name=\"cusInt03\" mask=\"2\"/><field name=\"cusStr03\" mask=\"2\"/><field name=\"priority\" mask=\"2\"/><field name=\"severity\" mask=\"1\"/><field name=\"cusTim01\" mask=\"1\"/><field name=\"cusStr01\" mask=\"2\"/><field name=\"cusStr04\" mask=\"3\"/><field name=\"cusInt02\" mask=\"2\"/><field name=\"cusStr02\" mask=\"3\"/></state><state status=\"99\"><transition status=\"1\"/><field name=\"cusInt01\" mask=\"1\"/><field name=\"cusInt03\" mask=\"2\"/><field name=\"cusStr03\" mask=\"2\"/><field name=\"priority\" mask=\"2\"/><field name=\"severity\" mask=\"1\"/><field name=\"cusTim01\" mask=\"1\"/><field name=\"cusStr01\" mask=\"2\"/><field name=\"cusStr04\" mask=\"3\"/><field name=\"cusInt02\" mask=\"2\"/><field name=\"cusStr02\" mask=\"3\"/></state></role></roles><states><state status=\"0\" label=\"New\"/><state status=\"1\" label=\"Open\"/><state status=\"99\" label=\"Closed\"/></states></metadata>');
 
 -- --------------------------------------------------------
 
@@ -221,7 +222,8 @@ CREATE TABLE `spaces` (
 --
 
 INSERT INTO `spaces` (`id`, `version`, `type`, `prefix_code`, `name`, `description`, `guest_allowed`, `metadata_id`) VALUES
-(1, 0, NULL, 'TASK', 'TASK', 'TASK', b'0', 1);
+(1, 1, NULL, 'OTASK', 'OTASK', 'Ofc TASK', b'0', 1),
+(2, 0, NULL, 'HTASK', 'HTASK', 'Hm Task', b'0', 2);
 
 -- --------------------------------------------------------
 
@@ -239,7 +241,8 @@ CREATE TABLE `space_sequence` (
 --
 
 INSERT INTO `space_sequence` (`id`, `next_seq_num`) VALUES
-(1, 1);
+(1, 1),
+(2, 1);
 
 -- --------------------------------------------------------
 
@@ -299,7 +302,8 @@ CREATE TABLE `user_space_roles` (
 
 INSERT INTO `user_space_roles` (`id`, `user_id`, `space_id`, `role_key`) VALUES
 (1, 1, NULL, 'ROLE_ADMIN'),
-(2, 1, 1, 'DEFAULT');
+(2, 1, 1, 'DEFAULT'),
+(3, 1, 2, 'DEFAULT');
 
 --
 -- Indexes for dumped tables
@@ -453,13 +457,13 @@ ALTER TABLE `item_users`
 -- AUTO_INCREMENT for table `metadata`
 --
 ALTER TABLE `metadata`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `spaces`
 --
 ALTER TABLE `spaces`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tags`
@@ -477,7 +481,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `user_space_roles`
 --
 ALTER TABLE `user_space_roles`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
