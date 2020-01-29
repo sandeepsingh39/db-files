@@ -30,6 +30,6 @@ Echo Successfully created war files and copied them in target tomcat "%tomcatWeb
 cd %currentDir%
 
 :invalid-input
-
-IF "%inputErrorLevel%"=="invalid-input"  (Echo "Invalid input provided. Activity aborted!!!")
+echo  User Provided : %UserInputPath% , inputErrorLevel  : %inputErrorLevel%
+IF %inputErrorLevel%=="invalid-input"  (Echo "Invalid input provided. Activity aborted!!!")
 
