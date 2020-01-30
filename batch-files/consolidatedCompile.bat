@@ -9,7 +9,7 @@ set /p UserInputPath=What project would you like compile?
 
 echo "%UserInputPath%"
 
-IF "%UserInputPath%"=="bce-gui" (GOTO compile-bce-gui) else (set inputErrorLevel="invalid-input" & GOTO invalid-input)
+IF %UserInputPath%=="bce-gui" (GOTO compile-bce-gui) else (set inputErrorLevel="invalid-input" & GOTO invalid-input)
 
 :compile-bce-gui
 cd C:\Users\premendra.kumar\git\bce-gui-30-dec\bce-gui
