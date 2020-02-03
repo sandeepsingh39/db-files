@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2020 at 02:13 PM
+-- Generation Time: Feb 03, 2020 at 02:34 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -50,7 +50,8 @@ CREATE TABLE `t_catg_ques` (
   `creation_date` datetime NOT NULL,
   `last_updation_date` datetime NOT NULL,
   `rating` int(11) NOT NULL DEFAULT 1,
-  `last_read_date` datetime NOT NULL DEFAULT current_timestamp()
+  `last_read_date` datetime NOT NULL DEFAULT current_timestamp(),
+  `hidden` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='table containing data for questions';
 
 -- --------------------------------------------------------

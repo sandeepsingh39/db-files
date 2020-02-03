@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2020 at 02:11 PM
+-- Generation Time: Feb 03, 2020 at 02:33 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -165,7 +165,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"word-meaning-test\",\"table\":\"t_word\"},{\"db\":\"word-meaning\",\"table\":\"t_word\"},{\"db\":\"topic-mgmt\",\"table\":\"topic\"},{\"db\":\"word-meaning\",\"table\":\"T_WORD\"},{\"db\":\"interview_mgmt\",\"table\":\"t_catg_ques\"},{\"db\":\"interview_mgmt\",\"table\":\"t_category\"},{\"db\":\"interview_mgmt_testing\",\"table\":\"t_category\"},{\"db\":\"interview-mgmt-test\",\"table\":\"categories\"},{\"db\":\"topic-mgmt\",\"table\":\"viewtopics\"},{\"db\":\"topic-mgmt\",\"table\":\"view\"}]');
+('root', '[{\"db\":\"interview_mgmt\",\"table\":\"t_catg_ques\"},{\"db\":\"word-meaning\",\"table\":\"t_word\"},{\"db\":\"topic-mgmt\",\"table\":\"topic\"},{\"db\":\"word-meaning\",\"table\":\"t_example\"},{\"db\":\"word-meaning\",\"table\":\"t_meaning\"},{\"db\":\"word-meaning-test\",\"table\":\"t_word\"},{\"db\":\"word-meaning\",\"table\":\"T_WORD\"},{\"db\":\"interview_mgmt\",\"table\":\"t_category\"},{\"db\":\"interview_mgmt_testing\",\"table\":\"t_category\"},{\"db\":\"interview-mgmt-test\",\"table\":\"categories\"}]');
 
 -- --------------------------------------------------------
 
@@ -241,7 +241,10 @@ CREATE TABLE `pma__table_uiprefs` (
 --
 
 INSERT INTO `pma__table_uiprefs` (`username`, `db_name`, `table_name`, `prefs`, `last_update`) VALUES
-('root', 'interview_mgmt', 't_category', '{\"sorted_col\":\"`creation_date` DESC\"}', '2019-12-31 12:36:55');
+('root', 'interview_mgmt', 't_category', '{\"sorted_col\":\"`creation_date` DESC\"}', '2019-12-31 12:36:55'),
+('root', 'interview_mgmt', 't_catg_ques', '{\"sorted_col\":\"`t_catg_ques`.`creation_date` DESC\"}', '2020-01-24 12:31:23'),
+('root', 'topic-mgmt', 'topic', '{\"sorted_col\":\"`topic`.`creation_date` DESC\"}', '2020-01-24 12:32:00'),
+('root', 'word-meaning', 't_word', '{\"sorted_col\":\"`t_word`.`word` ASC\"}', '2020-01-20 08:16:27');
 
 -- --------------------------------------------------------
 
@@ -279,7 +282,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2020-01-17 13:09:06', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2020-02-03 13:31:24', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 

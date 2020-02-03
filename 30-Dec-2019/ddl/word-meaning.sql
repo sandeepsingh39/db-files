@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 13, 2020 at 08:03 AM
+-- Generation Time: Feb 03, 2020 at 02:38 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.1.32
 
@@ -25,6 +25,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `t_example`
+--
+
+CREATE TABLE `t_example` (
+  `id` int(11) NOT NULL,
+  `wordId` int(11) NOT NULL,
+  `example` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_meaning`
+--
+
+CREATE TABLE `t_meaning` (
+  `id` int(11) NOT NULL,
+  `wordId` int(11) NOT NULL,
+  `meaning` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `t_word`
 --
 
@@ -42,6 +66,18 @@ CREATE TABLE `t_word` (
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `t_example`
+--
+ALTER TABLE `t_example`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `t_meaning`
+--
+ALTER TABLE `t_meaning`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `t_word`
